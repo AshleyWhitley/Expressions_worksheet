@@ -104,3 +104,12 @@ Price of the item with tax
 “Your X was originally $X, but after a X% discount, it is now $X without tax, and $X with tax.”
  */
 
+var shirt;
+var originalPrice = 300;
+var withTax = 350;
+var discounto = 60
+var discountt = 70
+
+var originalTotal = (300 - 60);
+var taxTotal = (350 - 70);
+console.log("Your shirt was originally" +" "+ "$"+ originalPrice +","+" "+ "but after a" + " " +discounto +"%"+" "+ "discount, it is now" +" "+"$"+originalTotal+" "+ "without tax, and"+" "+"$"+taxTotal+" "+ "with tax.");
