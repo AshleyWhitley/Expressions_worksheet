@@ -21,11 +21,12 @@ Sparky’s age in dog years.
 
 var humanAge = 8;
 dogAge = (humanAge * 7),
-console.log(dogAge);
+console.log("Sparky is" +" "+ humanAge +" "+ "human years old which is" +" "+ dogAge +" "+ "in dog years." );
 /*
  Problem 2:
  A bunch of students are having a party and somebody ordered pizza.
- Create an expression that calculates how much pizza each partygoer will get at the party.  (Assume all pizzas have the same number of slices and that the person dividing the pizza is really precise, so this can be a decimal, like 3.52 slices, etc.)
+ Create an expression that calculates how much pizza each partygoer will get at the party.
+ (Assume all pizzas have the same number of slices and that the person dividing the pizza is really precise, so this can be a decimal, like 3.52 slices, etc.)
  Given:
  Number of slices per pizza
  Number of people at the party
@@ -36,6 +37,11 @@ Number of slices per person. (Can be a decimal or floating point).
 “Each person ate X slices of pizza at the party.”
  */
 
+var people = 25;
+var pizzas = 10;
+var spp = 8; //Slices per pizza
+totalSlices = (pizzas * spp) / people;
+console.log("Each person ate" +" "+ totalSlices +" "+ "slices of pizza at the party.");
 
 
 /*
@@ -53,10 +59,15 @@ Don’t make new given variables/constants for this. Instead use the givens you 
  */
 
 
+//var is the given I set up above.
+dogSlices = (.2 * pizzas);
+console.log("Sparky got" +" "+ dogSlices +" "+ "slices of pizza.");
+
 
 /*
  Problem 4:
- You are budgeting your money for the year and must calculate your average weekly grocery shopping spending over the past five weeks. Store the past five grocery totals as a list in an array. Create an expression that will use the items in the array to calculate the average amount spent on groceries.
+ You are budgeting your money for the year and must calculate your average weekly grocery shopping spending over the past five weeks. Store the past five grocery totals as a list in an array.
+ Create an expression that will use the items in the array to calculate the average amount spent on groceries.
 Please note: there should only be one given for this problem set, the array holding the five weekly totals.  You should be able to access the array using the array access notation discussed earlier in the course.
 Givens:
 An array with five weekly grocery totals.
@@ -67,7 +78,15 @@ Total amount spent on groceries.
 “You have spent a total of $X on groceries over 5 weeks. That is an average of $X per week”
  */
 
+var grocery1 = 125;
+var grocery2 = 230;
+var grocery3 = 170;
+var grocery4 = 200;
+var grocery5 = 250;
 
+var total = (grocery1 + grocery2 + grocery3 + grocery4 + grocery5);
+var average = (grocery1 + grocery2 + grocery3 + grocery4 + grocery5) / 5
+console.log("You have spent a total of" +" "+ "$"+ total +" "+ "on groceries over 5 weeks. That is an average of" +" "+ "$" + average +" "+ "per week.");
 
 /*
 Problem 5:
